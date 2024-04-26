@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int user_input;
+while (true) {
+cout << "Enter an integer between 5 and 10: ";
+cin >> user_input;
+
+if (cin.fail()) {
+// check if input is an integer
+cin.clear();
+//clear flag error
+cin.ignore(100,'\n');
+//invalid input dropped
+cout <<,"sorry, you entered an invalid number. please try again.\n";
+} 
+   else if (user_input < 5 11 user_input > 10) {
+       cout<<you entered "<<user_input << ". please enter nother integer between 5 and 10.\n";
+}  else {
+cout << " your input value <<") has been accepted. \n";
+  break; 
+      }
+   }
+return 0;
+}
+
