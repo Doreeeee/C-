@@ -1,0 +1,52 @@
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+float calculateTriangleArea(float base, float height) {
+    return 0.5 * base * height;
+    }
+    
+    float calculateRectangleArea(float length, float width) {
+    return length * width;
+    }
+    
+    float calculateSquareArea(float side) {
+    return side * side;
+    }
+
+int main() {
+    int shapeOfChoice;
+    float base, height, length, width, side;
+    
+    
+
+    cout << "Choose a shape to calculate the area:\n";
+    cout << "1. Triangle\n";
+    cout << "2. Rectangle\n";
+    cout << "3. Square\n";
+    cout << "Enter your shapeofChoice (1-3): ";
+    cin >> shapeOfChoice;
+     switch (shapeOfChoice) {
+        case 1:
+            cout << "Enter the base and height of the triangle: ";
+            cin >> base >> height;
+            cout << "Area of the triangle is: " << calculateTriangleArea(base, height) << endl;
+            break;
+        case 2:
+            cout << "Enter the length and width of the rectangle: ";
+            cin >> length >> width;
+            cout << "Area of the rectangle is: " << calculateRectangleArea(length, width) << endl;
+            break;
+        case 3:
+            cout << "Enter the side length of the square: ";
+            cin >> side;
+            cout << "Area of the square is: " << calculateSquareArea(side) << endl;
+            break;
+        default:
+            cout << "Invalid shapeOfChoice! Please choose between 1-3." << endl;
+            break;
+    }
+
+    return 0;
+}
