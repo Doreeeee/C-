@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+// array declaration
+string afatg[] = {"B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179"};
+// array elements are being iterate indvidually
+for ( const string& afatg) {
+// checking if the element starts with "B"
+IF (afatg.front() == "B" ) {
+// the output of the element will be
+cout<< afatg <<endln;
+     }
+  }
+return 0;
+}   
